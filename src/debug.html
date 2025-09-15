@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pamoja Junior School - Debug Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #1a1a1a;
+            color: #fff;
+            line-height: 1.6;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .container {
+            max-width: 800px;
+            background: #2d2d2d;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            padding: 30px;
+            margin: 20px;
+        }
+        
+        h1 {
+            color: #4e9af5;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2.5rem;
+        }
+        
+        h2 {
+            color: #6bb5ff;
+            margin: 25px 0 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #4e9af5;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+        
+        .issue {
+            background: #3d3d3d;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border-left: 5px solid #4e9af5;
+        }
+        
+        .solution {
+            background: #3d3d3d;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border-left: 5px solid #5ac85a;
+        }
+        
+        .solution h3 {
+            color: #5ac85a;
+            margin-bottom: 10px;
+        }
+        
+        .issue h3 {
+            color: #ff6b6b;
+            margin-bottom: 10px;
+        }
+        
+        code {
+            background: #252525;
+            padding: 15px;
+            border-radius: 5px;
+            display: block;
+            overflow-x: auto;
+            margin: 15px 0;
+            font-family: 'Courier New', monospace;
+            border-left: 4px solid #4e9af5;
+        }
+        
+        .try-button {
+            display: inline-block;
+            background: #4e9af5;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 15px;
+            transition: background 0.3s;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        
+        .try-button:hover {
+            background: #3a7dc8;
+        }
+        
+        .success {
+            color: #5ac85a;
+            font-weight: bold;
+        }
+        
+        .error {
+            color: #ff6b6b;
+            font-weight: bold;
+        }
+        
+        .test-area {
+            background: #252525;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        
+        ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Website Debugging</h1>
+        <p>If you're seeing a blank page, here are some common issues and solutions:</p>
+        
+        <div class="issue">
+            <h3>Problem: Blank Page on Local Server</h3>
+            <p>You mentioned that when you run your code on the local server, nothing shows up except a blank black page.</p>
+        </div>
+        
+        <h2>Possible Causes & Solutions</h2>
+        
+        <div class="solution">
+            <h3>1. HTML Structure Issues</h3>
+            <p>Your HTML might have errors that prevent the browser from rendering content.</p>
+            <p>Check for:</p>
+            <ul>
+                <li>Missing or incorrect DOCTYPE declaration</li>
+                <li>Unclosed HTML tags</li>
+                <li>Invalid nesting of elements</li>
+                <li>JavaScript errors (check browser console)</li>
+            </ul>
+            <div class="test-area">
+                <p>Try this minimal HTML to see if it displays:</p>
+                <code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Test&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello World&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code>
+                <button class="try-button" onclick="testBasicHTML()">Test Basic HTML</button>
+                <p id="test-result-1"></p>
+            </div>
+        </div>
+        
+        <div class="solution">
+            <h3>2. File Path Issues</h3>
+            <p>If you're linking to external resources (CSS, JS, images), incorrect paths can cause problems.</p>
+            <p>Make sure:</p>
+            <ul>
+                <li>File paths are correct (case-sensitive on some servers)</li>
+                <li>You're using relative paths correctly</li>
+                <li>Files actually exist in the specified locations</li>
+            </ul>
+        </div>
+        
+        <div class="solution">
+            <h3>3. Server Configuration</h3>
+            <p>Your local server might not be configured properly.</p>
+            <p>Check:</p>
+            <ul>
+                <li>Is the server running on the correct port?</li>
+                <li>Are you accessing the right URL (e.g., http://localhost:3000)?</li>
+                <li>Is your file in the correct directory served by the server?</li>
+            </ul>
+        </div>
+        
+        <div class="solution">
+            <h3>4. Browser Caching Issues</h3>
+            <p>Sometimes browsers cache old versions of your page.</p>
+            <p>Try:</p>
+            <ul>
+                <li>Hard refresh (Ctrl+F5 or Cmd+Shift+R)</li>
+                <li>Clearing browser cache</li>
+                <li>Trying a different browser</li>
+            </ul>
+        </div>
+        
+        <div class="solution">
+            <h3>5. JavaScript Errors</h3>
+            <p>JavaScript errors can prevent page rendering.</p>
+            <p>Check the browser console for errors:</p>
+            <ul>
+                <li>Right-click → Inspect → Console (in most browsers)</li>
+                <li>Look for red error messages</li>
+            </ul>
+            <div class="test-area">
+                <p>Test if JavaScript is working correctly:</p>
+                <button class="try-button" onclick="testJavaScript()">Test JavaScript</button>
+                <p id="test-result-2"></p>
+            </div>
+        </div>
+        
+        <div class="solution">
+            <h3>6. CSS Issues</h3>
+            <p>CSS problems can sometimes make content invisible.</p>
+            <p>Check for:</p>
+            <ul>
+                <li>CSS properties that might hide content (display: none, visibility: hidden)</li>
+                <li>Very small font sizes or white text on white background</li>
+                <li>Positioning issues that move content off-screen</li>
+            </ul>
+            <div class="test-area">
+                <p>Test if CSS is working correctly:</p>
+                <button class="try-button" onclick="testCSS()">Test CSS</button>
+                <p id="test-result-3">This text should change when you click the button.</p>
+            </div>
+        </div>
+        
+        <h2>Next Steps</h2>
+        <p>If you're still having issues, try these steps:</p>
+        <ol>
+            <li>Validate your HTML at <a href="https://validator.w3.org/" >validator.w3.org</a></li>
+            <li>Check the server logs for errors</li>
+            <li>Simplify your code to a basic example and gradually add complexity</li>
+            <li>Try accessing your page from a different device on the same network</li>
+        </ol>
+    </div>
+
+    <script>
+        function testBasicHTML() {
+            document.getElementById('test-result-1').innerHTML = 
+                '<span class="success">If you saw a new page with "Hello World", your server can display basic HTML.</span>';
+        }
+        
+        function testJavaScript() {
+            document.getElementById('test-result-2').innerHTML = 
+                '<span class="success">JavaScript is working correctly! This message is generated by JavaScript.</span>';
+        }
+        
+        function testCSS() {
+            const elem = document.getElementById('test-result-3');
+            elem.innerHTML = '<span class="success">CSS is working! This text has changed color and size.</span>';
+            elem.style.color = '#5ac85a';
+            elem.style.fontSize = '1.2rem';
+            elem.style.fontWeight = 'bold';
+        }
+    </script>
+</body>
+</html>
