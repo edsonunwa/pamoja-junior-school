@@ -1,7 +1,7 @@
 import React from 'react';
 import './ContactPage.css';
 
-function ContactPage() {
+function ContactPage({ setCurrentPage }) {
   return (
     <div className="contact-page">
       {/* Contact Hero Section */}
@@ -125,12 +125,12 @@ function ContactPage() {
             <h3>Quick Links</h3>
             <div className="footer-underline"></div>
             <ul className="footer-links">
-              <li><a href="#about">About Us</a></li>
-              <li><a href="#gallery">Gallery</a></li>
-              <li><a href="#admissions">Admissions</a></li>
-              <li><a href="#fees">School Fees</a></li>
-              <li><a href="#uniform">School Uniform</a></li>
-              <li><a href="#contact">Contact Us</a></li>
+              <li><a href="#about" onClick={() => setCurrentPage('about')}>About Us</a></li>
+              <li><a href="#gallery" onClick={() => setCurrentPage('gallery')}>Gallery</a></li>
+              <li><a href="#admissions" onClick={() => setCurrentPage('admissions')}>Admissions</a></li>
+              <li><a href="#fees" onClick={() => setCurrentPage('admissions')}>School Fees</a></li>
+              <li><a href="#uniform" onClick={() => setCurrentPage('admissions')}>School Uniform</a></li>
+              <li><a href="#contact" onClick={() => setCurrentPage('contact')}>Contact Us</a></li>
             </ul>
           </div>
           <div className="footer-column">

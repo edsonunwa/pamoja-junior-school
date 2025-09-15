@@ -2,6 +2,10 @@ import React, { useState, useEffect } from 'react';
 import ContactPage from './ContactPage';
 import AdmissionsPage from './AdmissionsPage';
 import FAQPage from './FAQPage';
+import GalleryPage from './GalleryPage';
+import AboutPage from './AboutPage';
+import ProgrammesPage from './ProgrammesPage';
+import AcademicsPage from './AcademicsPage';
 import './App.css';
 
 
@@ -12,93 +16,80 @@ function App() {
   const [currentPage, setCurrentPage] = useState('home');
 
   
-  const slides = [
-    {
-      id: 1,
-      bgImage: "/images/happy pupils.JPG" ,
-      title: "Welcome to",
-      mainTitle: "PAMOJA JUNIOR SCHOOL",
-      buttonText: "ENROLL NOW!!"
-    },
-    {
-      id: 2,
-      bgImage: "/images/pupils 1.JPG",
-      title: "Welcome to",
-      mainTitle: "PAMOJA JUNIOR SCHOOL",
-      buttonText: "ENROLL NOW!!"
-    },
-    {
-      id: 3,
-      bgImage: "/images/pupils 2.JPG",
-      title: "Welcome to",
-      mainTitle: "PAMOJA JUNIOR SCHOOL",
-      buttonText: "ENROLL NOW!!"
-    },
-    {
-      id: 4,
-      bgImage: "/images/kids.JPG",
-      title: "Welcome to",
-      mainTitle: "PAMOJA JUNIOR SCHOOL",
-      buttonText: "ENROLL NOW!!"
-    },
-    {
-      id: 5,
-      bgImage: "/images/teachers and students.JPG",
-      title: "Welcome to",
-      mainTitle: "PAMOJA JUNIOR SCHOOL",
-      buttonText: "ENROLL NOW!!"
-    },
-    {
-      id: 6,
-      bgImage: "/images/staff.JPG",
-      title: "Welcome to",
-      mainTitle: "PAMOJA JUNIOR SCHOOL",
-      buttonText: "ENROLL NOW!!"
-    }
+  // Hero slider images
+  const heroImages = [
+    "/images/happy pupils.JPG",
+    "/images/pupils 1.JPG",
+    "/images/pupils 2.JPG",
+    "/images/kids.JPG",
+    "/images/teachers and students.JPG",
+    "/images/staff.JPG"
   ];
+
+  const heroContent = {
+    title: "Welcome to",
+    mainTitle: "PAMOJA JUNIOR SCHOOL",
+    buttonText: "ENROLL NOW!!"
+  };
+
+  // Auto-slide functionality
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveSlide((prev) => (prev + 1) % heroImages.length);
+    }, 4000); // Change image every 4 seconds
+    
+    return () => clearInterval(interval);
+  }, [heroImages.length]);
 
   const missionData = [
     {
-      title: "SCHOOL MISSION",
-      content: "To provide the best quality primary education that emphasizes the spiritual, emotional, social, intellectual and physical development of learners with great future aspirations.As a result oriented institution.",
+      title: "ACADEMIC EXCELLENCE",
+      content: "Delivering outstanding education through innovative teaching methods, qualified instructors, and a comprehensive curriculum that prepares students for future success.",
       image: "/images/pupils.JPG",
-      
-      color: "#000366"
+      color: "#1a237e"
     },
     {
-      title: "SCHOOL VISION",
-      content: "To empower all learners to embrace learning ,archieve their personal best and build their emotional,social and physical wellbeing.",
+      title: "HOLISTIC DEVELOPMENT",
+      content: "Nurturing well-rounded individuals through academic, physical, social, and spiritual development programs that build character and life skills.",
       image: "/images/staff.JPG",
-      color: "#00428e"
+      color: "#3f51b5"
     },
     {
-      title: "OUR CORE VALUES",
-      content: "God-fearing, Excellence, service beyond self, Customer Care, Transparency, Teamwork, Honesty. These core values guide our actions and decisions in everything we do.",
+      title: "FUTURE READY",
+      content: "Equipping students with 21st-century skills, critical thinking abilities, and the confidence to excel in an ever-changing world.",
       image: "/images/pupils 3.JPG",
-      color: "#000366"
+      color: "#1976d2"
     }
   ];
 
-  const events = [
-    { date: "07", month: "Sep", title: "Opening of Term 3, 2025", time: "8:00 am - 5:00 pm" },
-    { date: "14", month: "Sep", title: "Opening for All Classes", time: "8:00 am - 5:00 pm", location: "Pamoja Junior School" },
-    { date: "04", month: "Oct", title: "Candidates' Dedication", time: "8:00 am - 5:00 pm" }
+  const upcomingEvents = [
+    {
+      id: 1,
+      title: "Parent-Teacher Conference",
+      date: "March 15, 2025",
+      time: "9:00 AM - 4:00 PM",
+      description: "Meet with teachers to discuss your child's academic progress and development.",
+      imagePlaceholder: "parent-teacher-conference.jpg"
+    },
+    {
+      id: 2,
+      title: "Science Fair Exhibition",
+      date: "March 22, 2025",
+      time: "10:00 AM - 2:00 PM",
+      description: "Students showcase their innovative science projects and experiments.",
+      imagePlaceholder: "science-fair.jpg"
+    },
+    {
+      id: 3,
+      title: "Sports Day Competition",
+      date: "April 5, 2025",
+      time: "8:00 AM - 5:00 PM",
+      description: "Annual inter-house sports competition featuring various athletic events.",
+      imagePlaceholder: "sports-day.jpg"
+    }
   ];
 
-  const news = [
-    { date: "August 31, 2025", title: "END OF TERM TWO CIRCULAR 2025", image: "/images/pupils.JPG" },
-    { date: "May 7, 2025", title: "END OF TERM ONE CIRCULAR 2025", image: "/images/pupils 2.JPG" },
-    { date: "December 7, 2024", title: "End of Term Three 2024 Circular", image: "/images/pupils 3.JPG" }
-  ];
 
-  useEffect(() => {
-    // Simple slider functionality
-    const interval = setInterval(() => {
-      setActiveSlide((prev) => (prev + 1) % slides.length);
-    }, 1000);
-    
-    return () => clearInterval(interval);
-  }, [slides.length]);
 
   return (
     <div className="App">
@@ -112,14 +103,14 @@ function App() {
           </div>
           <nav className={`navigation ${isMobileMenuOpen ? 'active' : ''}`}>
             <ul>
-              <li><a href="#home" onClick={() => setCurrentPage('home')}>Home</a></li>
-              <li><a href="#about" onClick={() => setCurrentPage('home')}>About</a></li>
-              <li><a href="#admissions" onClick={() => setCurrentPage('admissions')}>Admissions</a></li>
-              <li><a href="#academics" onClick={() => setCurrentPage('home')}>Academics</a></li>
-              <li><a href="#programs" onClick={() => setCurrentPage('home')}>Our Programs</a></li>
-              <li><a href="#gallery" onClick={() => setCurrentPage('home')}>Gallery</a></li>
-              <li><a href="#faq" onClick={() => setCurrentPage('faq')}>FAQ</a></li>
-              <li><a href="#contact" onClick={() => setCurrentPage('contact')}>Contact</a></li>
+              <li><a href="#home" onClick={() => setCurrentPage('home')} className={currentPage === 'home' ? 'active' : ''}>Home</a></li>
+              <li><a href="#about" onClick={() => setCurrentPage('about')} className={currentPage === 'about' ? 'active' : ''}>About</a></li>
+              <li><a href="#academics" onClick={() => setCurrentPage('academics')} className={currentPage === 'academics' ? 'active' : ''}>Academics</a></li>
+              <li><a href="#admissions" onClick={() => setCurrentPage('admissions')} className={currentPage === 'admissions' ? 'active' : ''}>Admissions</a></li>
+              <li><a href="#programs" onClick={() => setCurrentPage('programmes')} className={currentPage === 'programmes' ? 'active' : ''}>Our Programs</a></li>
+              <li><a href="#gallery" onClick={() => setCurrentPage('gallery')} className={currentPage === 'gallery' ? 'active' : ''}>Gallery</a></li>
+              <li><a href="#faq" onClick={() => setCurrentPage('faq')} className={currentPage === 'faq' ? 'active' : ''}>FAQ</a></li>
+              <li><a href="#contact" onClick={() => setCurrentPage('contact')} className={currentPage === 'contact' ? 'active' : ''}>Contact</a></li>
             </ul>
           </nav>
           <div className="header-cta">
@@ -140,63 +131,152 @@ function App() {
 
       {/* Hero Slider */}
       <section className="hero-slider">
-        {slides.map((slide, index) => (
+        {heroImages.map((image, index) => (
           <div 
-            key={slide.id} 
-            className={`slide ${index === activeSlide ? 'active' : ''}`}
-            style={{ backgroundImage: `url(${slide.bgImage})` }}
+            key={index}
+            className={`hero-slide ${index === activeSlide ? 'active' : ''}`}
           >
-            <div className="slide-content">
-              <div className="slide-title">{slide.title}</div>
-              <div className="slide-main-title">{slide.mainTitle}</div>
-              <a href="#apply" className="slide-hover-button" onClick={() => setCurrentPage('admissions')}>Apply Now</a>
+            <img src={image} alt={`Pamoja Junior School ${index + 1}`} className="hero-image" />
+            <div className="hero-overlay">
+              <div className="slide-content">
+                <div className="slide-title">{heroContent.title}</div>
+                <div className="slide-main-title">{heroContent.mainTitle}</div>
+                <a href="#apply" className="slide-hover-button" onClick={() => setCurrentPage('admissions')}>Apply Now</a>
+              </div>
             </div>
           </div>
         ))}
-      </section>
-
-      {/* Mission Section */}
-      <section className="mission-section">
-        <div className="container">
-          {missionData.map((item, index) => (
-            <div key={index} className="mission-card">
-              <div className="mission-header" style={{ backgroundColor: item.color }}>
-                <h3>{item.title}</h3>
-              </div>
-              <div className="mission-image">
-                <img src={item.image} alt={item.title} />
-              </div>
-              <div className="mission-content">
-                <p>{item.content}</p>
-              </div>
-            </div>
+        
+        {/* Slider dots */}
+        <div className="hero-slider-dots">
+          {heroImages.map((_, index) => (
+            <button
+              key={index}
+              className={`hero-dot ${index === activeSlide ? 'active' : ''}`}
+              onClick={() => setActiveSlide(index)}
+            ></button>
           ))}
         </div>
       </section>
 
-      {/* Events Section */}
-      <section className="events-section">
+      {/* Welcome Section */}
+      <section className="welcome-section">
+        <div className="container">
+          <div className="welcome-hero">
+            <div className="welcome-badge">
+              <div className="badge-content">
+                <i className="fa fa-graduation-cap"></i>
+                <span>Excellence Since 2014</span>
+              </div>
+            </div>
+            <h1 className="welcome-title">Nurturing Tomorrow's Leaders</h1>
+            <p className="welcome-tagline">Where Academic Excellence Meets Character Development</p>
+          </div>
+          
+          <div className="welcome-content">
+            <div className="welcome-text">
+              <div className="section-intro">
+                <h2>Welcome to Pamoja Junior School</h2>
+                <div className="intro-line"></div>
+              </div>
+              <p className="welcome-description">
+                At Pamoja Junior School, we believe every child deserves an exceptional start to their educational journey. 
+                Our innovative approach combines rigorous academics with character building, ensuring students develop both 
+                intellectual capabilities and strong moral foundations.
+              </p>
+              
+              <div className="welcome-highlights">
+                <div className="highlight-grid">
+                  <div className="highlight-item">
+                    <div className="highlight-icon">
+                      <i className="fa fa-chalkboard-teacher"></i>
+                    </div>
+                    <div className="highlight-content">
+                      <h4>Expert Educators</h4>
+                      <p>Qualified teachers passionate about student success</p>
+                    </div>
+                  </div>
+                  <div className="highlight-item">
+                    <div className="highlight-icon">
+                      <i className="fa fa-microscope"></i>
+                    </div>
+                    <div className="highlight-content">
+                      <h4>Modern Facilities</h4>
+                      <p>State-of-the-art learning environments and resources</p>
+                    </div>
+                  </div>
+                  <div className="highlight-item">
+                    <div className="highlight-icon">
+                      <i className="fa fa-heart"></i>
+                    </div>
+                    <div className="highlight-content">
+                      <h4>Holistic Development</h4>
+                      <p>Nurturing mind, body, and character simultaneously</p>
+                    </div>
+                  </div>
+                  <div className="highlight-item">
+                    <div className="highlight-icon">
+                      <i className="fa fa-user-friends"></i>
+                    </div>
+                    <div className="highlight-content">
+                      <h4>Personalized Attention</h4>
+                      <p>Small classes ensuring individual student focus</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="welcome-actions">
+                <a href="#academics" className="btn-primary" onClick={() => setCurrentPage('academics')}>Explore Academics</a>
+                <a href="#about" className="btn-secondary" onClick={() => setCurrentPage('about')}>Our Story</a>
+              </div>
+            </div>
+            
+            <div className="welcome-visual">
+              <div className="image-stack">
+                <div className="main-image">
+                  <img src="/images/teachers and students.JPG" alt="Teachers and Students at Pamoja" />
+                  <div className="image-badge">
+                    <span>Quality Education</span>
+                  </div>
+                </div>
+                <div className="accent-image">
+                  <img src="/images/logo.jpg" alt="Pamoja Junior School Badge" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Upcoming Events Section */}
+      <section className="upcoming-events">
         <div className="container">
           <div className="section-header">
-            <h5>Upcoming Events Third term</h5>
-            <div className="divider"></div>
+            <h2>Upcoming Events</h2>
+            <p>Stay connected with our school community through exciting events and activities</p>
           </div>
           <div className="events-grid">
-            {events.map((event, index) => (
-              <div key={index} className="event-card">
-                <div className="event-date">
-                  <span className="date">{event.date}</span>
-                  <span className="month">{event.month}</span>
-                </div>
+            {upcomingEvents.map((event) => (
+              <div key={event.id} className="event-card">
                 <div className="event-image">
-                  <img src="/images/logo.jpg" alt="Event" />
+                  <div className="image-placeholder">
+                    <i className="fa fa-calendar"></i>
+                    <span>{event.imagePlaceholder}</span>
+                  </div>
                 </div>
                 <div className="event-content">
-                  <h3>{event.title}</h3>
-                  <div className="event-info">
-                    <span><i className="fa fa-clock-o"></i> {event.time}</span>
-                    {event.location && <span><i className="fa fa-map-marker"></i> {event.location}</span>}
+                  <div className="event-date">
+                    <i className="fa fa-calendar-alt"></i>
+                    <span>{event.date}</span>
                   </div>
+                  <div className="event-time">
+                    <i className="fa fa-clock"></i>
+                    <span>{event.time}</span>
+                  </div>
+                  <h3>{event.title}</h3>
+                  <p>{event.description}</p>
+                  <a href="#contact" className="event-btn" onClick={() => setCurrentPage('contact')}>Learn More</a>
                 </div>
               </div>
             ))}
@@ -206,16 +286,56 @@ function App() {
 
       {/* Admissions Section */}
       <section className="admissions-section">
-        <div className="admissions-image">
-          <div className="admissions-badge">
-            <img src="/images/logo.jpg" alt="Pamoja Junior School" />
+        <div className="container">
+          <div className="admissions-wrapper">
+            <div className="admissions-visual">
+              <div className="admissions-badge">
+                <div className="badge-content">
+                  <img src="/images/logo.jpg" alt="Pamoja Junior School Logo" className="badge-logo" />
+                </div>
+              </div>
+            </div>
+            <div className="admissions-content">
+              <div className="content-header">
+                <h2>Start Your Child's Journey</h2>
+                <div className="header-accent"></div>
+              </div>
+              <h3>Apply for Admission Today</h3>
+              <div className="admission-highlight">
+                <i className="fa fa-calendar-check"></i>
+                <a href="#apply" onClick={() => setCurrentPage('admissions')} className="admission-link">
+                  <span>Fall 2025 Applications Now Open</span>
+                </a>
+              </div>
+              <p>Join the Pamoja Junior School family and give your child the foundation for lifelong success. Our admission process is designed to welcome students from diverse backgrounds into our nurturing, academically excellent environment.</p>
+              
+              <div className="admission-features">
+                <div className="feature-row">
+                  <div className="feature-icon">
+                    <i className="fa fa-users"></i>
+                  </div>
+                  <div className="feature-text">
+                    <h4>Inclusive Community</h4>
+                    <p>Welcoming students from all backgrounds and cultures</p>
+                  </div>
+                </div>
+                <div className="feature-row">
+                  <div className="feature-icon">
+                    <i className="fa fa-award"></i>
+                  </div>
+                  <div className="feature-text">
+                    <h4>Academic Excellence</h4>
+                    <p>Proven track record of outstanding student achievement</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="admission-actions">
+                <a href="#apply" className="btn-apply-primary" onClick={() => setCurrentPage('admissions')}>Start Application</a>
+                <a href="#contact" className="btn-apply-secondary" onClick={() => setCurrentPage('contact')}>Schedule Visit</a>
+              </div>
+            </div>
           </div>
-        </div>
-        <div className="admissions-content">
-          <h3>Apply for Admission</h3>
-          <span>Fall 2025 applications are now open</span>
-          <p>Welcome to the Pamoja Junior School Admissions Office. We accept students from various backgrounds. Our environment is of international standard, catering to the students' different educational and cultural needs.</p>
-          <a href="#apply" className="cta-button" onClick={() => setCurrentPage('admissions')}>Apply Now</a>
         </div>
       </section>
 
@@ -237,12 +357,13 @@ function App() {
             <h3>Quick Links</h3>
             <div className="footer-underline"></div>
             <ul className="footer-links">
-              <li><a href="#about">About Us</a></li>
-              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#about" onClick={() => setCurrentPage('about')}>About Us</a></li>
+              <li><a href="#programs" onClick={() => setCurrentPage('programmes')}>Our Programs</a></li>
+              <li><a href="#gallery" onClick={() => setCurrentPage('gallery')}>Gallery</a></li>
               <li><a href="#admissions" onClick={() => setCurrentPage('admissions')}>Admissions</a></li>
-              <li><a href="#fees">School Fees</a></li>
-              <li><a href="#uniform">School Uniform</a></li>
-              <li><a href="#contact">Contact Us</a></li>
+              <li><a href="#fees" onClick={() => setCurrentPage('admissions')}>School Fees</a></li>
+              <li><a href="#uniform" onClick={() => setCurrentPage('admissions')}>School Uniform</a></li>
+              <li><a href="#contact" onClick={() => setCurrentPage('contact')}>Contact Us</a></li>
             </ul>
           </div>
           <div className="footer-column">
@@ -275,11 +396,23 @@ function App() {
         </>
       )}
       
+      {/* About Page */}
+      {currentPage === 'about' && <AboutPage setCurrentPage={setCurrentPage} />}
+      
+      {/* Academics Page */}
+      {currentPage === 'academics' && <AcademicsPage setCurrentPage={setCurrentPage} />}
+      
+      {/* Programmes Page */}
+      {currentPage === 'programmes' && <ProgrammesPage setCurrentPage={setCurrentPage} />}
+      
+      {/* Gallery Page */}
+      {currentPage === 'gallery' && <GalleryPage setCurrentPage={setCurrentPage} />}
+      
       {/* Contact Page */}
-      {currentPage === 'contact' && <ContactPage />}
+      {currentPage === 'contact' && <ContactPage setCurrentPage={setCurrentPage} />}
       
       {/* Admissions Page */}
-      {currentPage === 'admissions' && <AdmissionsPage />}
+      {currentPage === 'admissions' && <AdmissionsPage setCurrentPage={setCurrentPage} />}
       
       {/* FAQ Page */}
       {currentPage === 'faq' && <FAQPage setCurrentPage={setCurrentPage} />}
