@@ -1,4 +1,75 @@
-/* Admissions Page Styles */
+/* Admissions Page Styles - Professional Animations */
+
+/* Page Entry Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Animation Classes */
+.animate-fadeInUp {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.animate-slideInLeft {
+  animation: slideInLeft 0.8s ease-out;
+}
+
+.animate-slideInRight {
+  animation: slideInRight 0.8s ease-out;
+}
+
+.animate-bounceIn {
+  animation: bounceIn 0.8s ease-out;
+}
+
+.animate-delay-1 { animation-delay: 0.1s; }
+.animate-delay-2 { animation-delay: 0.2s; }
+.animate-delay-3 { animation-delay: 0.3s; }
+
 .admissions-page {
   background: #f9f9f9;
   min-height: 100vh;
@@ -112,8 +183,10 @@
 }
 
 .requirement-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 40px rgba(0, 51, 153, 0.15);
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 
+    0 15px 40px rgba(0, 51, 153, 0.15),
+    0 0 30px rgba(0, 122, 255, 0.1);
 }
 
 .requirement-icon {
@@ -125,6 +198,29 @@
   align-items: center;
   justify-content: center;
   margin: 0 auto 20px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.requirement-icon::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left 0.6s ease;
+}
+
+.requirement-card:hover .requirement-icon {
+  transform: rotate(360deg) scale(1.1);
+  box-shadow: 0 0 25px rgba(0, 122, 255, 0.5);
+}
+
+.requirement-card:hover .requirement-icon::before {
+  left: 100%;
 }
 
 .requirement-icon i {
