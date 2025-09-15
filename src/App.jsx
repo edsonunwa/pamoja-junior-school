@@ -163,12 +163,6 @@ function App() {
       <section className="welcome-section">
         <div className="container">
           <div className="welcome-hero">
-            <div className="welcome-badge">
-              <div className="badge-content">
-                <i className="fa fa-graduation-cap"></i>
-                <span>Excellence Since 2014</span>
-              </div>
-            </div>
             <h1 className="welcome-title">Nurturing Tomorrow's Leaders</h1>
             <p className="welcome-tagline">Where Academic Excellence Meets Character Development</p>
           </div>
