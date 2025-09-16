@@ -32,10 +32,10 @@ function AboutPage({ setCurrentPage }) {
               </div>
               <h3>Our Mission</h3>
               <p>
-                To provide the best quality primary education that emphasizes the spiritual, emotional, 
-                social, intellectual and physical development of learners with great future aspirations. 
-                As a result oriented institution, we are committed to nurturing well-rounded individuals 
-                who will make positive contributions to society.
+              To provide the best quality primary education that emphasizes the spiritual, 
+              emotional, social, intellectual and physical development of learners with great future aspirations .
+              As a result oriented institution.
+      
               </p>
             </div>
             
@@ -45,9 +45,9 @@ function AboutPage({ setCurrentPage }) {
               </div>
               <h3>Our Vision</h3>
               <p>
-                To empower all learners to embrace learning, achieve their personal best and build their 
-                emotional, social and physical wellbeing. We envision a future where our students become 
-                confident, compassionate and capable leaders who will shape tomorrow's world.
+              Empowering all learners to embrace learning ,
+              achieve their personal best and build their emotional, social and physical wellbeing.
+              As a way of shapping the future of our national leaders.
               </p>
             </div>
           </div>

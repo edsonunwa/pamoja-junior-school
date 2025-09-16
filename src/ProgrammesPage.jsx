@@ -5,22 +5,23 @@ function ProgrammesPage({ setCurrentPage }) {
   const [activeProgram, setActiveProgram] = useState('all');
 
   const programmes = [
+    
     {
-      id: 'computer',
-      title: 'Computer Lessons',
-      category: 'academic',
-      description: 'Modern computer education introducing students to digital literacy, programming basics, and essential software applications.',
+      id: 'Transport',
+      title: 'Transport Services',
+      category: 'care',
+      description: 'Safe and reliable transport services ensuring timely and secure travel for all students to and from school,it is important to note that this is a prepaid service and the rates depend on the distance from school.',
       features: [
-        'Basic Computer Skills',
-        'Introduction to Programming',
-        'Microsoft Office Suite',
-        'Internet Safety & Digital Citizenship',
-        'Creative Software Applications',
-        'Typing & Keyboard Skills'
+        'Safe and Secure Vehicles',
+        'Experienced Drivers',
+        
+        'Flexible Pick-up and Drop-off Points',
+        'Affordable Rates',
+        
       ],
-      ageGroups: 'Nursery to Primary 7',
-      duration: '2 hours per week',
-      imagePlaceholder: 'computer-lessons.jpg'
+      ageGroups: 'all age groups',
+      duration: 'every school day',
+      imagePlaceholder: 'vocational-skills.jpg'
     },
     {
       id: 'vocational',
@@ -28,12 +29,12 @@ function ProgrammesPage({ setCurrentPage }) {
       category: 'practical',
       description: 'Hands-on practical skills training that prepares students for real-world applications and future career paths.',
       features: [
-        'Carpentry & Woodwork',
-        'Basic Electrical Skills',
+        
+        
         'Tailoring & Fashion Design',
         'Agriculture & Gardening',
         'Cooking & Food Preparation',
-        'Arts & Crafts'
+        'Arts & Crafts '
       ],
       ageGroups: 'Primary 4 to Primary 7',
       duration: '3 hours per week',
@@ -47,8 +48,8 @@ function ProgrammesPage({ setCurrentPage }) {
       features: [
         'Football & Soccer',
         'Basketball & Netball',
-        'Athletics & Track Events',
-        'Traditional Games',
+        
+        
         'Swimming (Seasonal)',
         'Indoor Games & Chess'
       ],
@@ -66,8 +67,7 @@ function ProgrammesPage({ setCurrentPage }) {
         'Nutritious Meals & Snacks',
         'Nap Time & Rest Periods',
         'Educational Play Activities',
-        'Personal Care Assistance',
-        'Parent Communication Updates'
+        
       ],
       ageGroups: 'Ages 2-6 years',
       duration: 'Full School Day',
@@ -80,13 +80,13 @@ function ProgrammesPage({ setCurrentPage }) {
       description: 'Foundational literacy program focusing on proper handwriting techniques and comprehensive reading skills.',
       features: [
         'Proper Letter Formation',
-        'Cursive Writing Development',
+        
         'Phonics & Word Recognition',
         'Reading Comprehension',
         'Vocabulary Building',
-        'Creative Writing Skills'
+        
       ],
-      ageGroups: 'Nursery to Primary 7',
+      ageGroups: 'All classes',
       duration: '5 hours per week',
       imagePlaceholder: 'handwriting-reading.jpg'
     },
@@ -98,12 +98,12 @@ function ProgrammesPage({ setCurrentPage }) {
       features: [
         'Public Speaking Techniques',
         'Critical Thinking Development',
-        'Argument Construction',
+        
         'Confidence Building',
         'Research Skills',
-        'Parliamentary Debate Format',
+        
         'Presentation Skills',
-        'Voice Projection & Clarity'
+        
       ],
       ageGroups: 'Primary 3 to Primary 7',
       duration: '2 hours per week',
@@ -193,10 +193,7 @@ function ProgrammesPage({ setCurrentPage }) {
                       <i className="fa fa-clock"></i>
                       <span><strong>Duration:</strong> {program.duration}</span>
                     </div>
-                    <div className="detail-item">
-                      <i className="fa fa-money"></i>
-                      <span><strong>Cost:</strong> Free of Charge</span>
-                    </div>
+                    
                   </div>
 
                   <div className="programme-features">

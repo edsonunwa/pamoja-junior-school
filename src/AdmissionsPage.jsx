@@ -80,7 +80,9 @@ function AdmissionsPage({ setCurrentPage }) {
                 <ul>
                   <li>Birth certificate or other proof of age.</li>
                   <li>Previous school records or reports (if applicable).</li>
-                  <li>Passport-sized photographs.</li>
+                  <li>Passport-sized photographs including one for the child,mother and father.</li>
+                  <li>Medical form from a recognised medical center</li>
+                  <li>photocopy of both parents identity cards.</li>
                 </ul>
               </div>
 
@@ -110,7 +112,7 @@ function AdmissionsPage({ setCurrentPage }) {
                 </div>
                 <h3>Enrollment Fee</h3>
                 <ul>
-                  <li>A non-refundable enrollment fee is required upon acceptance to secure the learner's place at the school.</li>
+                  <li>A non-refundable admission fee of UGX 30,000 is required upon acceptance to secure the learner's place at the school.</li>
                 </ul>
               </div>
 
@@ -121,7 +123,7 @@ function AdmissionsPage({ setCurrentPage }) {
                 <h3>Academic Calendar</h3>
                 <ul>
                   <li>School year begins in February and ends in November.</li>
-                  <li>Three terms with mid-term breaks and holidays.</li>
+                  <li>Three terms with mid-term visitations and holidays.</li>
                   <li>Applications accepted throughout the year based on availability.</li>
                 </ul>
               </div>

@@ -15,7 +15,7 @@ function AcademicsPage({ setCurrentPage }) {
         'Pre-Reading Skills',
         'Number Recognition',
         'Creative Arts',
-        'Motor Skills Development',
+      
         'Social Skills',
         'Basic English',
         'Environmental Awareness'
@@ -174,10 +174,7 @@ function AcademicsPage({ setCurrentPage }) {
               experienced faculty, and proven teaching methodologies create an environment where every child can excel.
             </p>
             <div className="academic-stats">
-              <div className="stat-item">
-                <h3>95%</h3>
-                <p>PLE Pass Rate</p>
-              </div>
+              
               <div className="stat-item">
                 <h3>15+</h3>
                 <p>Qualified Teachers</p>
@@ -283,38 +280,6 @@ function AcademicsPage({ setCurrentPage }) {
           </div>
         </section>
 
-        {/* Academic Success Stories */}
-        <section className="success-stories">
-          <div className="stories-content">
-            <h2>Proven Academic Success</h2>
-            <div className="success-highlights">
-              <div className="highlight-card">
-                <h3>Primary Leaving Examinations</h3>
-                <p>Our students consistently achieve outstanding results in PLE, with 95% pass rate and many gaining first grades.</p>
-                <div className="highlight-stats">
-                  <span>95% Pass Rate</span>
-                  <span>85% First Grade</span>
-                </div>
-              </div>
-              <div className="highlight-card">
-                <h3>Secondary School Placement</h3>
-                <p>Our graduates gain admission to Uganda's top secondary schools and continue their academic excellence.</p>
-                <div className="highlight-stats">
-                  <span>Top Schools</span>
-                  <span>100% Placement</span>
-                </div>
-              </div>
-              <div className="highlight-card">
-                <h3>Academic Competitions</h3>
-                <p>Students regularly participate and excel in district and national academic competitions and science fairs.</p>
-                <div className="highlight-stats">
-                  <span>Multiple Awards</span>
-                  <span>District Champions</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
 
         {/* Call to Action */}
         <section className="academics-cta">
