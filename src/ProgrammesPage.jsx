@@ -21,7 +21,9 @@ function ProgrammesPage({ setCurrentPage }) {
       ],
       ageGroups: 'all age groups',
       duration: 'every school day',
-      imagePlaceholder: 'vocational-skills.jpg'
+      imagePlaceholder: 'public/images/trans.jpg',
+      
+      //
     },
     {
       id: 'vocational',
@@ -55,7 +57,7 @@ function ProgrammesPage({ setCurrentPage }) {
       ],
       ageGroups: 'All Age Groups',
       duration: '4 hours per week',
-      imagePlaceholder: 'games-sports.jpg'
+      imagePlaceholder: 'public/images/sports2.jpg'
     },
     {
       id: 'daycare',
@@ -88,7 +90,7 @@ function ProgrammesPage({ setCurrentPage }) {
       ],
       ageGroups: 'All classes',
       duration: '5 hours per week',
-      imagePlaceholder: 'handwriting-reading.jpg'
+      imagePlaceholder: 'public/images/classs.jpg'
     },
     {
       id: 'debating',
@@ -175,11 +177,16 @@ function ProgrammesPage({ setCurrentPage }) {
             {getFilteredPrograms().map((program) => (
               <div key={program.id} className="programme-card">
                 <div className="programme-image">
-                  <div className="image-placeholder">
-                    <i className="fa fa-image"></i>
-                    <span>{program.imagePlaceholder}</span>
-                  </div>
+                  <img
+                  src={program.imagePlaceholder}
+                  alt={program.title}
+                  className="programme-img"
+                />
                 </div>
+
+ 
+
+                
                 <div className="programme-content">
                   <h3>{program.title}</h3>
                   <p className="programme-description">{program.description}</p>

@@ -7,11 +7,11 @@ function AboutPage({ setCurrentPage }) {
       {/* About Hero Section */}
       <div className="about-hero">
         <div className="about-hero-slide">
-          <img src="/images/staff.JPG" alt="Pamoja Junior School About Us" className="about-hero-image" />
+          <img src="public/images/pupils 2.JPG" alt="Pamoja Junior School About Us" className="about-hero-image" />
           <div className="about-hero-overlay">
             <div className="about-hero-content">
               <h1>About Pamoja Junior School</h1>
-              <p>Discover our commitment to excellence in education and holistic development of every child</p>
+              <p>ONE OF THE LEADING DAY AND BOARDING JUNIOR SCHOOLS IN WAKISO</p>
             </div>
           </div>
         </div>
@@ -64,7 +64,7 @@ function AboutPage({ setCurrentPage }) {
           <div className="message-card">
             <div className="message-content">
               <div className="message-text">
-                <h3>Proprietor's Message</h3>
+                <h3>Headteachers  Message</h3>
                 <div className="quote-icon">
                   <i className="fa fa-quote-left"></i>
                 </div>
@@ -81,13 +81,16 @@ function AboutPage({ setCurrentPage }) {
                   parents, and most importantly, our wonderful students who make Pamoja Junior School 
                   a truly special place.
                 </p>
+                
+                  
+                
                 <div className="signature">
                   <strong>Mr. Tumuryamye Shine Ronald</strong>
-                  <span>School Proprietor</span>
+                  <span>School Headteacher</span>
                 </div>
               </div>
               <div className="message-image">
-                <img src="/images/director.jpg" alt="Mr. Tumuryamye Shine Ronald - School Proprietor" className="director-image" />
+                <img src="public/images/headtr.jpg" alt="Mr. Tumuryamye Shine Ronald - School Proprietor" className="director-image" />
               </div>
             </div>
           </div>
@@ -99,12 +102,12 @@ function AboutPage({ setCurrentPage }) {
                 <img src="/images/director.jpg" alt="Mr. Tumuryamye Shine Ronald - Board Chairman" className="director-image" />
               </div>
               <div className="message-text">
-                <h3>Chairman's Message</h3>
+                <h3>DO'S Message</h3>
                 <div className="quote-icon">
                   <i className="fa fa-quote-left"></i>
                 </div>
                 <p>
-                  As Chairman of Pamoja Junior School, I am honored to be part of an institution that 
+                  As director of studies Pamoja Junior School, I am honored to be part of an institution that 
                   has consistently demonstrated excellence in education and character formation. Our 
                   commitment to providing world-class education in a supportive and caring environment 
                   remains unwavering.
@@ -114,10 +117,12 @@ function AboutPage({ setCurrentPage }) {
                   we ensure that every student receives individual attention and support to thrive 
                   academically, socially, and personally. Our investment in quality infrastructure, 
                   qualified teachers, and modern teaching methods reflects our dedication to excellence.
+                  This is through our well drafted timetable that balances academics, co-curricular activities,
+                  and personal development.
                 </p>
                 <div className="signature">
-                  <strong>Mr. Tumuryamye Shine Ronald</strong>
-                  <span>Board Chairman</span>
+                  <strong>Mrs.</strong>
+                  <span>Director of studies</span>
                 </div>
               </div>
             </div>
