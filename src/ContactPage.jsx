@@ -106,6 +106,8 @@ function ContactPage({ setCurrentPage }) {
           </div>
         </div>
       </div>
+
+     
       
       {/* Footer */}
       <footer className="footer">

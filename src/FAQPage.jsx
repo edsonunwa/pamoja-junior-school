@@ -272,6 +272,9 @@ function FAQPage({ setCurrentPage }) {
         </section>
       </div>
 
+
+      
+    
       {/* Footer */}
       <footer className="footer">
         <div className="container">

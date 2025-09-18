@@ -125,6 +125,7 @@
   margin: 0 auto;
   box-sizing: border-box;
   overflow-wrap: break-word;
+  -webkit-hyphens: auto;
   hyphens: auto;
 }
 
@@ -144,6 +145,7 @@
   line-height: 1.5;
   word-wrap: break-word;
   overflow-wrap: break-word;
+  -webkit-hyphens: auto;
   hyphens: auto;
   max-width: 100%;
   margin: 0 auto;
