@@ -65,26 +65,26 @@ function App() {
   const upcomingEvents = [
     {
       id: 1,
-      title: "Parent-Teacher Conference",
-      date: "March 15, 2025",
+      title: "Visitation sunday",
+      date: "November 2, 2025",
       time: "9:00 AM - 4:00 PM",
-      description: "Meet with teachers to discuss your child's academic progress and development.",
+      description: "Parents visit their children and get to know about how they are fairing and check on thier academics.",
       imagePlaceholder: "parent-teacher-conference.jpg"
     },
     {
       id: 2,
-      title: "Science Fair Exhibition",
-      date: "March 22, 2025",
+      title: "Top class graduation",
+      date: "November 30, 2025",
       time: "10:00 AM - 2:00 PM",
-      description: "Students showcase their innovative science projects and experiments.",
+      description: "A ceremony  where the top tenderers (top class) graduate to obidient ones (primary one) Each child in top class will contribute a fee of UGX fifty thousand shillings only.",
       imagePlaceholder: "science-fair.jpg"
     },
     {
       id: 3,
-      title: "Sports Day Competition",
-      date: "April 5, 2025",
+      title: "End of term Mega concert(Fun day)& closure of term III",
+      date: "november 30, 2025",
       time: "8:00 AM - 5:00 PM",
-      description: "Annual inter-house sports competition featuring various athletic events.",
+      description: "students get to enjoy their last day at school and in their respective classes.",
       imagePlaceholder: "sports-day.jpg"
     }
   ];
