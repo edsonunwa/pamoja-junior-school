@@ -85,7 +85,7 @@ function AboutPage({ setCurrentPage }) {
                   
                 
                 <div className="signature">
-                  <strong>Mr. Tumuryamye Shine Ronald</strong>
+                  <strong>Mr. TUMURAMYE SHINE RONALD</strong>
                   <span>School Headteacher</span>
                 </div>
               </div>
@@ -99,7 +99,7 @@ function AboutPage({ setCurrentPage }) {
           <div className="message-card reverse">
             <div className="message-content">
               <div className="message-image">
-                <img src="/images/director.jpg" alt="Mr. Tumuryamye Shine Ronald - Board Chairman" className="director-image" />
+                <img src="/public/images/WhatsApp Image 2025-09-18 at 17.23.38_2ac86097.jpg" alt="Mr. Tumuryamye Shine Ronald - Board Chairman" className="director-image" />
               </div>
               <div className="message-text">
                 <h3>DO'S Message</h3>
@@ -121,7 +121,7 @@ function AboutPage({ setCurrentPage }) {
                   and personal development.
                 </p>
                 <div className="signature">
-                  <strong>Mrs.</strong>
+                  <strong>Mr ALFRED</strong>
                   <span>Director of studies</span>
                 </div>
               </div>
@@ -137,20 +137,18 @@ function AboutPage({ setCurrentPage }) {
                   <i className="fa fa-quote-left"></i>
                 </div>
                 <p>
-                  At Pamoja Junior School, we understand that the early years of a child's education 
-                  are crucial in shaping their future. As Managing Director, I ensure that our school 
-                  maintains the highest standards in all aspects of education delivery, from curriculum 
-                  implementation to co-curricular activities.
+                  At Pamoja junior school , we believe unity is what enables mankind to grow to greater heights . 
+                  This is where we derive our name, PAMOJA a swahili word that means TOGETHER .Dear parents unite with us as we grow our school to another level.
                 </p>
                 <p>
                   Our approach to education goes beyond traditional classroom learning. We emphasize 
-                  critical thinking, creativity, and character development. Our students are not just 
+                  critical thinking, creativity, character development and teamwork . Our students are not just 
                   academically prepared but are also equipped with life skills, moral values, and the 
-                  confidence to face future challenges with resilience and determination.
+                  confidence to face future challenges with resilience and determination. 
                 </p>
                 <div className="signature">
-                  <strong>Mr. Tumuryamye Shine Ronald</strong>
-                  <span>Managing Director</span>
+                  <strong>Mr. TALEMWA EDSON </strong>
+                  <span>One of our Directors</span>
                 </div>
               </div>
               <div className="message-image">
@@ -170,7 +168,7 @@ function AboutPage({ setCurrentPage }) {
 
           <div className="teachers-content">
             <div className="teachers-image">
-              <img src="/images/teachers and students.JPG" alt="Our Teachers" />
+              <img src="/public/images/staff.JPG" alt="Our Teachers" />
               <div className="teachers-overlay">
                 <div className="overlay-text">
                   <h3>Excellence in Teaching</h3>

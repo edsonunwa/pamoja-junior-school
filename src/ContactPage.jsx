@@ -10,11 +10,13 @@ function ContactPage({ setCurrentPage }) {
         <div className="contact-hero-overlay">
           <div className="contact-hero-content">
             <h1>Contact Us</h1>
-            <p>Get in touch with Pamoja Junior School - We're here to help you with admissions, academic programs, and any questions about our educational community</p>
+            <p>Get in touch with Pamoja Junior School - ASK ANYTHING</p>
           </div>
         </div>
       </div>
       
+
+      <form name="contact us" method="POST" data-netlify="true" netlify-honeypot="bot-field" enctype="multipart/form-data"></form>
       <div className="container">
         <div className="contact-content">
           <div className="contact-form-section">

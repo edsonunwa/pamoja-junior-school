@@ -132,6 +132,7 @@ function AdmissionsPage({ setCurrentPage }) {
         </section>
 
         {/* Online Application Form Section */}
+        <form name="admissions" method="POST" data-netlify="true" netlify-honeypot="bot-field" enctype="multipart/form-data"></form>
         <section className="online-application">
           <div className="application-header">
             <h2>Online Admission Form</h2>

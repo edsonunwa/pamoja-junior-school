@@ -9,41 +9,37 @@ function GalleryPage({ setCurrentPage }) {
   const galleryImages = {
     students: [
       {
-        src: "/images/happy pupils.JPG",
+        src: "/public/images/IMG-20250905-WA0049.jpg",
         title: "Happy Students",
         description: "Our joyful students during their learning activities"
       },
       {
-        src: "/images/pupils 1.JPG",
+        src: "/images/kids.JPG",
         title: "Primary Students",
         description: "Students engaged in classroom activities"
       },
       {
-        src: "/images/pupils 2.JPG",
+        src: "/public/images/WhatsApp Image 2025-09-18 at 17.21.42_5acc5477.jpg",
         title: "Learning Together",
         description: "Students collaborating in their studies"
       },
+      
       {
-        src: "/images/pupils 3.JPG",
-        title: "Academic Excellence",
-        description: "Students demonstrating academic achievements"
-      },
-      {
-        src: "/images/pupils.JPG",
+        src: "/public/images/WhatsApp Image 2025-09-18 at 17.21.51_f9e594e6.jpg",
         title: "School Community",
         description: "Our vibrant school community"
       },
       {
-        src: "/images/kids.JPG",
-        title: "Young Learners",
-        description: "Our youngest students in action"
+        src: "/public/images/classs.jpg",
+        title: "classroom environment",
+        description: "How our classes are arranged"
       }
     ],
     staff: [
       {
         src: "/images/staff.JPG",
         title: "Dedicated Staff",
-        description: "Our committed teaching and administrative staff"
+        description: "Some of our committed teaching and administrative staff"
       },
       {
         src: "/images/teachers and students.JPG",
@@ -52,8 +48,8 @@ function GalleryPage({ setCurrentPage }) {
       },
       {
         src: "/images/teaches and students.JPG",
-        title: "Interactive Learning",
-        description: "Teachers engaging with students in meaningful education"
+        title: "Prefectorial Body",
+        description: "staff leaders and student leaders"
       }
     ],
     facilities: [
@@ -95,7 +91,7 @@ function GalleryPage({ setCurrentPage }) {
       {/* Gallery Hero Section */}
       <div className="gallery-hero">
         <div className="gallery-hero-slide">
-          <img src="/images/pupils 2.JPG" alt="Pamoja Junior School Gallery" className="gallery-hero-image" />
+          <img src="/public/images/Screenshot 2025-09-20 001843.png" alt="Pamoja Junior School Gallery" className="gallery-hero-image" />
           <div className="gallery-hero-overlay">
             <div className="gallery-hero-content">
               <h1>School Gallery</h1>

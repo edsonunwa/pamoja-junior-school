@@ -23,12 +23,13 @@ function App() {
     "/images/pupils 2.JPG",
     "/images/kids.JPG",
     "/images/teachers and students.JPG",
-    "/images/staff.JPG"
+    
   ];
 
   const heroContent = {
     title: "Welcome to",
-    mainTitle: "PAMOJA JUNIOR SCHOOL",
+    mainTitle: "PAMOJA JUNIOR SCHOOL             ",
+    
     buttonText: "ENROLL NOW!!"
   };
 
@@ -77,7 +78,8 @@ function App() {
       date: "November 30, 2025",
       time: "10:00 AM - 2:00 PM",
       description: "A ceremony  where the top tenderers (top class) graduate to obidient ones (primary one) Each child in top class will contribute a fee of UGX fifty thousand shillings only.",
-      imagePlaceholder: "science-fair.jpg"
+      imagePlaceholder: "/public/images/WhatsApp Image 2025-09-18 at 17.22.58_ea9dfb41.jpg"
+      
     },
     {
       id: 3,
@@ -170,7 +172,7 @@ function App() {
           <div className="welcome-content">
             <div className="welcome-text">
               <div className="section-intro">
-                <h2>Welcome to Pamoja Junior School</h2>
+                <h2>Welcome to Pamoja  Day & Boarding Junior School</h2>
                 <div className="intro-line"></div>
               </div>
               <p className="welcome-description">
@@ -253,11 +255,12 @@ function App() {
           <div className="events-grid">
             {upcomingEvents.map((event) => (
               <div key={event.id} className="event-card">
-                <div className="event-image">
-                  <div className="image-placeholder">
-                    <i className="fa fa-calendar"></i>
-                    <span>{event.imagePlaceholder}</span>
-                  </div>
+                 <div className="event-image">
+                  <img
+                  src={event.imagePlaceholder}
+                  alt={event.title}
+                  className="event-img"
+                />
                 </div>
                 <div className="event-content">
                   <div className="event-date">
