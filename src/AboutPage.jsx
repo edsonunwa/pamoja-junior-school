@@ -168,7 +168,7 @@ function AboutPage({ setCurrentPage }) {
 
           <div className="teachers-content">
             <div className="teachers-image">
-              <img src="/public/images/staff.JPG" alt="Our Teachers" />
+              <img src="/images/staff.JPG" alt="Our Teachers" />
               <div className="teachers-overlay">
                 <div className="overlay-text">
                   <h3>Excellence in Teaching</h3>
