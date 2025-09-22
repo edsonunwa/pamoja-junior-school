@@ -121,7 +121,7 @@ function AboutPage({ setCurrentPage }) {
                   and personal development.
                 </p>
                 <div className="signature">
-                  <strong>Mr ALFRED</strong>
+                  <strong>Mr ALFRED KARAMAGI</strong>
                   <span>Director of studies</span>
                 </div>
               </div>
