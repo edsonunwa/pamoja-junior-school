@@ -21,7 +21,7 @@ function ProgrammesPage({ setCurrentPage }) {
       ],
       ageGroups: 'all age groups',
       duration: 'every school day',
-      imagePlaceholder: 'public/images/trans.jpg',
+      imagePlaceholder: '/images/trans.jpg',
       
       //
     },
@@ -57,7 +57,7 @@ function ProgrammesPage({ setCurrentPage }) {
       ],
       ageGroups: 'All Age Groups',
       duration: '4 hours per week',
-      imagePlaceholder: 'public/images/sports2.jpg'
+      imagePlaceholder: '/images/sports2.jpg'
     },
     {
       id: 'daycare',
@@ -90,7 +90,7 @@ function ProgrammesPage({ setCurrentPage }) {
       ],
       ageGroups: 'All classes',
       duration: '5 hours per week',
-      imagePlaceholder: 'public/images/classs.jpg'
+      imagePlaceholder: '/images/classs.jpg'
     },
     {
       id: 'debating',

@@ -9,7 +9,7 @@ function GalleryPage({ setCurrentPage }) {
   const galleryImages = {
     students: [
       {
-        src: "/public/images/IMG-20250905-WA0049.jpg",
+        src: "/images/IMG-20250905-WA0049.jpg",
         title: "Happy Students",
         description: "Our joyful students during their learning activities"
       },
@@ -19,18 +19,18 @@ function GalleryPage({ setCurrentPage }) {
         description: "Students engaged in classroom activities"
       },
       {
-        src: "/public/images/WhatsApp Image 2025-09-18 at 17.21.42_5acc5477.jpg",
+        src: "/images/WhatsApp Image 2025-09-18 at 17.21.42_5acc5477.jpg",
         title: "Learning Together",
         description: "Students collaborating in their studies"
       },
       
       {
-        src: "/public/images/WhatsApp Image 2025-09-18 at 17.21.51_f9e594e6.jpg",
+        src: "/images/WhatsApp Image 2025-09-18 at 17.21.51_f9e594e6.jpg",
         title: "School Community",
         description: "Our vibrant school community"
       },
       {
-        src: "/public/images/classs.jpg",
+        src: "/images/classs.jpg",
         title: "classroom environment",
         description: "How our classes are arranged"
       }
@@ -91,7 +91,7 @@ function GalleryPage({ setCurrentPage }) {
       {/* Gallery Hero Section */}
       <div className="gallery-hero">
         <div className="gallery-hero-slide">
-          <img src="/public/images/Screenshot 2025-09-20 001843.png" alt="Pamoja Junior School Gallery" className="gallery-hero-image" />
+          <img src="/images/Screenshot 2025-09-20 001843.png" alt="Pamoja Junior School Gallery" className="gallery-hero-image" />
           <div className="gallery-hero-overlay">
             <div className="gallery-hero-content">
               <h1>School Gallery</h1>
