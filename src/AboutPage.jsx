@@ -90,7 +90,7 @@ function AboutPage({ setCurrentPage }) {
                 </div>
               </div>
               <div className="message-image">
-                <img src="public/images/headtr.jpg" alt="Mr. Tumuryamye Shine Ronald - School Proprietor" className="director-image" />
+                <img src="/images/headtr.jpg" alt="Mr. Tumuryamye Shine Ronald - School Proprietor" className="director-image" />
               </div>
             </div>
           </div>
@@ -99,7 +99,7 @@ function AboutPage({ setCurrentPage }) {
           <div className="message-card reverse">
             <div className="message-content">
               <div className="message-image">
-                <img src="/public/images/WhatsApp Image 2025-09-18 at 17.23.38_2ac86097.jpg" alt="Mr. Tumuryamye Shine Ronald - Board Chairman" className="director-image" />
+                <img src="/images/WhatsApp Image 2025-09-18 at 17.23.38_2ac86097.jpg" alt="Mr. Tumuryamye Shine Ronald - Board Chairman" className="director-image" />
               </div>
               <div className="message-text">
                 <h3>DO'S Message</h3>
