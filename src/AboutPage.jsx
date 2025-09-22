@@ -7,7 +7,7 @@ function AboutPage({ setCurrentPage }) {
       {/* About Hero Section */}
       <div className="about-hero">
         <div className="about-hero-slide">
-          <img src="public/images/pupils 2.JPG" alt="Pamoja Junior School About Us" className="about-hero-image" />
+          <img src="/images/pupils 2.JPG" alt="Pamoja Junior School About Us" className="about-hero-image" />
           <div className="about-hero-overlay">
             <div className="about-hero-content">
               <h1>About Pamoja Junior School</h1>
