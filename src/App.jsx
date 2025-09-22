@@ -78,7 +78,7 @@ function App() {
       date: "November 30, 2025",
       time: "10:00 AM - 2:00 PM",
       description: "A ceremony  where the top tenderers (top class) graduate to obidient ones (primary one) Each child in top class will contribute a fee of UGX fifty thousand shillings only.",
-      imagePlaceholder: "/public/images/WhatsApp Image 2025-09-18 at 17.22.58_ea9dfb41.jpg"
+      imagePlaceholder: "/images/WhatsApp Image 2025-09-18 at 17.22.58_ea9dfb41.jpg"
       
     },
     {
