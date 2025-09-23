@@ -16,51 +16,69 @@ function ContactPage({ setCurrentPage }) {
       </div>
       
 
-      <form name="contact us" method="POST" data-netlify="true" netlify-honeypot="bot-field" enctype="multipart/form-data"></form>
-      <div className="container">
-        <div className="contact-content">
-          <div className="contact-form-section">
-            <h2>Send us a Message</h2>
-            <form className="contact-form">
-              <div className="form-row">
-                <div className="form-group">
-                  <label htmlFor="firstName">First Name *</label>
-                  <input type="text" id="firstName" name="firstName" required />
-                </div>
-                <div className="form-group">
-                  <label htmlFor="lastName">Last Name *</label>
-                  <input type="text" id="lastName" name="lastName" required />
-                </div>
-              </div>
-              <div className="form-row">
-                <div className="form-group">
-                  <label htmlFor="email">Email Address *</label>
-                  <input type="email" id="email" name="email" required />
-                </div>
-                <div className="form-group">
-                  <label htmlFor="phone">Phone Number</label>
-                  <input type="tel" id="phone" name="phone" />
-                </div>
-              </div>
-              <div className="form-group">
-                <label htmlFor="subject">Subject *</label>
-                <select id="subject" name="subject" required>
-                  <option value="">Select a subject</option>
-                  <option value="admissions">Admissions Inquiry</option>
-                  <option value="academic">Academic Information</option>
-                  <option value="fees">Fees and Payment</option>
-                  <option value="transport">Transport Services</option>
-                  <option value="general">General Inquiry</option>
-                  <option value="other">Other</option>
-                </select>
-              </div>
-              <div className="form-group">
-                <label htmlFor="message">Message *</label>
-                <textarea id="message" name="message" rows="6" required placeholder="Please share your inquiry or message here..."></textarea>
-              </div>
-              <button type="submit" className="submit-btn">Send Message</button>
-            </form>
+      <form name="contact-us" method="POST" data-netlify="true" netlify-honeypot="bot-field" enctype="multipart/form-data">
+  
+  <input type="hidden" name="form-name" value="contact-us" />
+
+  
+  <p hidden>
+    <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+  </p>
+
+  <div className="container">
+    <div className="contact-content">
+      <div className="contact-form-section">
+        <h2>Send us a Message</h2>
+        <form className="contact-form">
+          <div className="form-row">
+            <div className="form-group">
+              <label htmlFor="firstname">First Name *</label>
+              <input type="text" id="firstName" name="firstName" required />
+            </div>
+            <div className="form-group">
+              <label htmlFor="lastName">Last Name *</label>
+              <input type="text" id="lastName" name="lastName" required />
+            </div>
           </div>
+
+          <div className="form-row">
+            <div className="form-group">
+              <label htmlFor="email">Email Address *</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div className="form-group">
+              <label htmlFor="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" />
+            </div>
+          </div>
+
+          <div className="form-group">
+            <label htmlFor="subject">Subject *</label>
+            <select id="subject" name="subject" required>
+              <option value="">Select a subject</option>
+              <option value="admissions">Admissions Inquiry</option>
+              <option value="academic">Academic Information</option>
+              <option value="fees">Fees and Payment</option>
+              <option value="transport">Transport Services</option>
+              <option value="general">General Inquiry</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div className="form-group">
+            <label htmlFor="message">Message *</label>
+            <textarea id="message" name="message" rows="6" required placeholder="Please share your inquiry or message here..."></textarea>
+          </div>
+
+          <button type="submit" className="submit-btn">Send Message</button>
+          <form name="contact-us" method="POST" data-netlify="true" action="/thank-you"/>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</form>
+
           
           <div className="contact-info-section">
             <h2>Get in Touch</h2>
@@ -107,11 +125,11 @@ function ContactPage({ setCurrentPage }) {
             </div>
           </div>
         </div>
-      </div>
-
-     
       
-      {/* Footer */}
+
+  )
+      
+      {/* Footer Section */}
       <footer className="footer">
         <div className="container">
           <div className="footer-column">
@@ -164,8 +182,8 @@ function ContactPage({ setCurrentPage }) {
           </div>
         </div>
       </footer>
-    </div>
-  );
+    
+  
 }
 
 export default ContactPage;
