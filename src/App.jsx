@@ -70,7 +70,7 @@ function App() {
       date: "November 2, 2025",
       time: "9:00 AM - 4:00 PM",
       description: "Parents visit their children and get to know about how they are fairing and check on thier academics.",
-      imagePlaceholder: "parent-teacher-conference.jpg"
+      imagePlaceholder: "/images/IMG-20250923-WA0032.jpg"
     },
     {
       id: 2,
@@ -87,7 +87,7 @@ function App() {
       date: "november 30, 2025",
       time: "8:00 AM - 5:00 PM",
       description: "students get to enjoy their last day at school and in their respective classes.",
-      imagePlaceholder: "sports-day.jpg"
+      imagePlaceholder: "/images/IMG-20250905-WA0039.jpg"
     }
   ];
 
