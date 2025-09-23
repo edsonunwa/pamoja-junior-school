@@ -40,7 +40,7 @@ function ProgrammesPage({ setCurrentPage }) {
       ],
       ageGroups: 'Primary 4 to Primary 7',
       duration: '3 hours per week',
-      imagePlaceholder: 'vocational-skills.jpg'
+      imagePlaceholder: '/images/IMG-20250923-WA0234.jpg'
     },
     {
       id: 'sports',
@@ -109,7 +109,7 @@ function ProgrammesPage({ setCurrentPage }) {
       ],
       ageGroups: 'Primary 3 to Primary 7',
       duration: '2 hours per week',
-      imagePlaceholder: 'debating.jpg'
+      imagePlaceholder: '/images/IMG-20250923-WA0041.jpg'
     }
   ];
 

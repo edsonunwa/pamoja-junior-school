@@ -85,7 +85,7 @@ function AboutPage({ setCurrentPage }) {
                   
                 
                 <div className="signature">
-                  <strong>Mr. TUMURAMYE SHINE RONALD</strong>
+                  <strong>Mr. TUMURAMYE SHYNE RONALD</strong>
                   <span>School Headteacher</span>
                 </div>
               </div>
@@ -102,7 +102,7 @@ function AboutPage({ setCurrentPage }) {
                 <img src="/images/WhatsApp Image 2025-09-18 at 17.23.38_2ac86097.jpg" alt="Mr. Tumuryamye Shine Ronald - Board Chairman" className="director-image" />
               </div>
               <div className="message-text">
-                <h3>DO'S Message</h3>
+                <h3>DOS' Message</h3>
                 <div className="quote-icon">
                   <i className="fa fa-quote-left"></i>
                 </div>
@@ -137,7 +137,7 @@ function AboutPage({ setCurrentPage }) {
                   <i className="fa fa-quote-left"></i>
                 </div>
                 <p>
-                  At Pamoja junior school , we believe unity is what enables mankind to grow to greater heights . 
+                  At Pamoja Junior School , we believe unity is what enables mankind to grow to greater heights . 
                   This is where we derive our name, PAMOJA a swahili word that means TOGETHER .Dear parents unite with us as we grow our school to another level.
                 </p>
                 <p>
@@ -152,7 +152,7 @@ function AboutPage({ setCurrentPage }) {
                 </div>
               </div>
               <div className="message-image">
-                <img src="/images/director.jpg" alt="Mr. Tumuryamye Shine Ronald - Managing Director" className="director-image" />
+                <img src="" alt="Mr. Talemwa Edson - Managing Director" className="director-image" />
               </div>
             </div>
           </div>
@@ -197,7 +197,7 @@ function AboutPage({ setCurrentPage }) {
                   </div>
                   <div className="quality-text">
                     <h4>Passionate & Caring</h4>
-                    <p>Our educators are passionate about teaching and genuinely care for each student's success and wellbeing.</p>
+                    <p>Our educators are passionste about teaching and really care for each learners success and wellbeing</p>
                   </div>
                 </div>
 

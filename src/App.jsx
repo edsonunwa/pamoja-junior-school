@@ -28,7 +28,7 @@ function App() {
 
   const heroContent = {
     title: "Welcome to",
-    mainTitle: "PAMOJA JUNIOR SCHOOL             ",
+    mainTitle: "PAMOJA JUNIOR SCHOOL (DAY & BOARDING)            ",
     
     buttonText: "ENROLL NOW!!"
   };
