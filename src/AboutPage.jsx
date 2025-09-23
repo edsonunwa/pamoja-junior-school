@@ -207,7 +207,7 @@ function AboutPage({ setCurrentPage }) {
                   </div>
                   <div className="quality-text">
                     <h4>Innovative Methods</h4>
-                    <p>We employ modern teaching methods and technology to make learning engaging and effective.</p>
+                    <p>We employ modern teaching methods and technology to make learning more engaging and effective.</p>
                   </div>
                 </div>
 
@@ -217,7 +217,7 @@ function AboutPage({ setCurrentPage }) {
                   </div>
                   <div className="quality-text">
                     <h4>Individual Attention</h4>
-                    <p>With small class sizes, our teachers provide personalized attention to each student's unique learning needs.</p>
+                    <p>With small class sizes, our teachers provide personalized attention to each learner's unique learning needs.</p>
                   </div>
                 </div>
               </div>

@@ -26,7 +26,7 @@ function AcademicsPage({ setCurrentPage }) {
         'Safe and nurturing environment',
         'Preparation for formal education'
       ],
-      imagePlaceholder: 'nursery-students.jpg'
+      
     },
     {
       id: 'primary-lower',
@@ -35,14 +35,11 @@ function AcademicsPage({ setCurrentPage }) {
       category: 'primary',
       description: 'Building strong foundational skills in literacy, numeracy, and critical thinking through engaging and interactive learning.',
       subjects: [
+        'literacy 1A (Science)',
+        'literacy 1B (Social Studies)',
         'English Language',
         'Mathematics',
-        'Science',
-        'Social Studies',
-        'Religious Education',
-        'Physical Education',
-        'Creative Arts',
-        'Life Skills'
+        'Computer Studies',
       ],
       highlights: [
         'Phonics-based reading instruction',
@@ -50,7 +47,7 @@ function AcademicsPage({ setCurrentPage }) {
         'Interactive science experiments',
         'Character development focus'
       ],
-      imagePlaceholder: 'lower-primary.jpg'
+    
     },
     {
       id: 'primary-upper',
@@ -66,7 +63,8 @@ function AcademicsPage({ setCurrentPage }) {
         'Religious Education',
         'Physical Education',
         'Agricultural Science',
-        'Computer Studies'
+        'Computer Studies',
+        'Life Skills'
       ],
       highlights: [
         'PLE examination preparation',
@@ -74,7 +72,7 @@ function AcademicsPage({ setCurrentPage }) {
         'Research and project work',
         'Leadership development'
       ],
-      imagePlaceholder: 'upper-primary.jpg'
+      
     }
   ];
 
@@ -87,7 +85,7 @@ function AcademicsPage({ setCurrentPage }) {
     {
       icon: 'fa-users',
       title: 'Personalized Learning Environment',
-      description: 'Carefully managed class sizes ensuring individual attention and quality teacher-student interaction for optimal learning.'
+      description: 'Carefully managed class sizes ensuring individual attention and quality teacher-learner interaction for optimal learning.'
     },
     {
       icon: 'fa-book',
@@ -97,7 +95,7 @@ function AcademicsPage({ setCurrentPage }) {
     {
       icon: 'fa-trophy',
       title: 'Outstanding Results',
-      description: 'Proven track record of students excelling in Primary Leaving Examinations and gaining admission to top secondary schools.'
+      description: 'Proven track record of learners excelling in Primary Leaving Examinations and gaining admission to top secondary schools.'
     },
     {
       icon: 'fa-lightbulb',
@@ -114,7 +112,7 @@ function AcademicsPage({ setCurrentPage }) {
   const assessmentMethods = [
     {
       title: 'Continuous Assessment',
-      description: 'Regular evaluations throughout the term to track student progress and provide timely support.',
+      description: 'Regular evaluations throughout the term to track learner progress and provide timely support.',
       icon: 'fa-chart-line'
     },
     {
@@ -129,7 +127,7 @@ function AcademicsPage({ setCurrentPage }) {
     },
     {
       title: 'Portfolio Development',
-      description: 'Student work collections showcasing growth, creativity, and academic achievements over time.',
+      description: 'Learner work collections showcasing growth, creativity, and academic achievements over time.',
       icon: 'fa-folder-open'
     }
   ];
@@ -170,7 +168,7 @@ function AcademicsPage({ setCurrentPage }) {
             <p>
               At Pamoja Junior School, academics is not just what we do - it's who we are. Every decision, every program, 
               and every moment in our school day is designed around one central mission: providing exceptional education 
-              that prepares our students for academic success and lifelong learning. Our comprehensive curriculum, 
+              that prepares our learners for academic success and lifelong learning. Our comprehensive curriculum, 
               experienced faculty, and proven teaching methodologies create an environment where every child can excel.
             </p>
             <div className="academic-stats">
@@ -207,12 +205,7 @@ function AcademicsPage({ setCurrentPage }) {
           <div className="levels-container">
             {getFilteredLevels().map((level) => (
               <div key={level.id} className="level-card">
-                <div className="level-image">
-                  <div className="image-placeholder">
-                    <i className="fa fa-image"></i>
-                    <span>{level.imagePlaceholder}</span>
-                  </div>
-                </div>
+                
                 <div className="level-content">
                   <div className="level-header">
                     <h3>{level.title}</h3>

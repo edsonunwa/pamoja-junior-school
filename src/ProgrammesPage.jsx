@@ -40,7 +40,7 @@ function ProgrammesPage({ setCurrentPage }) {
       ],
       ageGroups: 'Primary 4 to Primary 7',
       duration: '3 hours per week',
-      imagePlaceholder: '/images/IMG-20250923-WA0234.jpg'
+      imagePlaceholder: '/images/Screenshot 2025-09-23 232551.png'
     },
     {
       id: 'sports',
@@ -73,7 +73,7 @@ function ProgrammesPage({ setCurrentPage }) {
       ],
       ageGroups: 'Ages 2-6 years',
       duration: 'Full School Day',
-      imagePlaceholder: 'daycare.jpg'
+      imagePlaceholder: '/images/IMG-20250923-WA0035.jpg'
     },
     {
       id: 'handwriting',
@@ -109,7 +109,7 @@ function ProgrammesPage({ setCurrentPage }) {
       ],
       ageGroups: 'Primary 3 to Primary 7',
       duration: '2 hours per week',
-      imagePlaceholder: '/images/IMG-20250923-WA0041.jpg'
+      imagePlaceholder: '/images/Screenshot 2025-09-23 233027.png'
     }
   ];
 
