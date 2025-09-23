@@ -10,7 +10,7 @@ function ProgrammesPage({ setCurrentPage }) {
       id: 'Transport',
       title: 'Transport Services',
       category: 'care',
-      description: 'Safe and reliable transport services ensuring timely and secure travel for all students to and from school,it is important to note that this is a prepaid service and the rates depend on the distance from school.',
+      description: 'Safe and reliable transport services ensuring timely and secure travel for all learners to and from school,it is important to note that this is a prepaid service and the rates depend on the distance from school.',
       features: [
         'Safe and Secure Vehicles',
         'Experienced Drivers',
@@ -48,7 +48,7 @@ function ProgrammesPage({ setCurrentPage }) {
       category: 'physical',
       description: 'Comprehensive sports and games program promoting physical fitness, teamwork, and healthy competition.',
       features: [
-        'Football & Soccer',
+        'Football & handball',
         'Basketball & Netball',
         
         
@@ -71,7 +71,7 @@ function ProgrammesPage({ setCurrentPage }) {
         'Educational Play Activities',
         
       ],
-      ageGroups: 'Ages 2-6 years',
+      ageGroups: 'Ages 1-6 years',
       duration: 'Full School Day',
       imagePlaceholder: '/images/IMG-20250923-WA0035.jpg'
     },
@@ -149,9 +149,9 @@ function ProgrammesPage({ setCurrentPage }) {
           <div className="intro-content">
             <h2>Excellence in Education</h2>
             <p>
-              At Pamoja Junior School, we offer a diverse range of programs designed to cater to the holistic development of every child. 
-              Our curriculum combines traditional academic subjects with modern skills training, ensuring our students are well-prepared for the challenges of tomorrow. 
-              <strong>All programs are provided free of charge to every learner.</strong>
+              At Pamoja Junior School, we offer a diverse range of programs designed to cater for the holistic development of every child. 
+              Our curriculum combines traditional academic subjects with modern skills training, ensuring our learners are well-prepared for the challenges of tomorrow. 
+              <strong>Except the transport service which is PREPAID , the rest of our programs are available for all students at no extra cost. </strong>
             </p>
           </div>
         </section>
@@ -241,14 +241,14 @@ function ProgrammesPage({ setCurrentPage }) {
                   <i className="fa fa-child"></i>
                 </div>
                 <h3>Individual Attention</h3>
-                <p>Small class sizes ensure personalized attention for every student's development.</p>
+                <p>Small class sizes ensure personalized attention for every learners's development.</p>
               </div>
               <div className="benefit-card">
                 <div className="benefit-icon">
                   <i className="fa fa-money"></i>
                 </div>
                 <h3>Free Education</h3>
-                <p>All programs are provided free of charge to ensure every child has access to quality education.</p>
+                <p>All the necessary programs are provided free of charge to ensure every child has access to quality education.</p>
               </div>
             </div>
           </div>
@@ -310,7 +310,7 @@ function ProgrammesPage({ setCurrentPage }) {
               </div>
               <div className="contact-item">
                 <i className="fa fa-map-marker"></i>
-                <span>NKOOWE, HOIMA Rd, P.O.BOX 132474, WAKISO, Uganda</span>
+                <span>NKOOWE,GAYAZA VILLAGE, HOIMA Rd, P.O.BOX 132474, WAKISO-UGANDA</span>
               </div>
             </div>
           </div>

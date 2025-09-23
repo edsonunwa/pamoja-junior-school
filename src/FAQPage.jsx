@@ -315,7 +315,7 @@ function FAQPage({ setCurrentPage }) {
               </div>
               <div className="contact-item">
                 <i className="fa fa-map-marker"></i>
-                <span>NKOOWE, HOIMA Rd, P.O.BOX 132474, WAKISO, Uganda</span>
+                <span>NKOOWE,GAYAZA VILLAGE, HOIMA Rd, P.O.BOX 132474, WAKISO-UGANDA</span>
               </div>
             </div>
           </div>
