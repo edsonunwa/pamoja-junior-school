@@ -151,9 +151,7 @@ function AboutPage({ setCurrentPage }) {
                   <span>One of our Directors</span>
                 </div>
               </div>
-              <div className="message-image">
-                <img src="" alt="Mr. Talemwa Edson - Managing Director" className="director-image" />
-              </div>
+              
             </div>
           </div>
         </section>

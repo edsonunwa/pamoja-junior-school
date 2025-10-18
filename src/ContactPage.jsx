@@ -16,9 +16,10 @@ function ContactPage({ setCurrentPage }) {
       </div>
       
 
-      <form name="contact-us" method="POST" data-netlify="true" netlify-honeypot="bot-field" enctype="multipart/form-data">
+  <form name="contact-us" method="POST" data-netlify="true" netlify-honeypot="bot-field" enctype="multipart/form-data">
   
   <input type="hidden" name="form-name" value="contact-us" />
+      
 
   
   <p hidden>
