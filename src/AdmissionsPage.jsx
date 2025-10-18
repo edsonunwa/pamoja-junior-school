@@ -115,6 +115,18 @@ function AdmissionsPage({ setCurrentPage }) {
                   <li>A non-refundable admission fee of UGX 30,000 is required upon acceptance to secure the learner's place at the school.</li>
                 </ul>
               </div>
+              <div className="requirement-card">
+              <div className="requirement-icon">
+                <i className="fa fa-credit-card"></i>
+              </div>
+              <h3>Fees Structure</h3>
+              <ul>
+                <li>Day schoolers: UGX 500,000 per term</li>
+                <li>Boarding: UGX 900,000 per term</li>   
+                
+              
+              </ul>
+              </div>
 
               <div className="requirement-card">
                 <div className="requirement-icon">
