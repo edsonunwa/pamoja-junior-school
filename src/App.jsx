@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import ContactPage from "./ContactPage";
 import ContactPage from './ContactPage';
 import AdmissionsPage from './AdmissionsPage';
 import FAQPage from './FAQPage';
