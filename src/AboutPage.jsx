@@ -1,4 +1,11 @@
 import React from 'react';
+import { Helmet } from "react-helmet";
+
+<Helmet>
+  <title>About Us | Pamoja Junior School</title>
+  <meta name="description" content="Learn about Pamoja Junior School’s mission, vision, values, and commitment to providing quality education for young learners." />
+</Helmet>
+
 import './AboutPage.css';
 
 function AboutPage({ setCurrentPage }) {

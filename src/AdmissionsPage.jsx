@@ -44,7 +44,7 @@ function AdmissionsPage({ setCurrentPage }) {
         <img src="/images/kids.JPG" alt="Pamoja Junior School Admissions" className="admissions-hero-image" />
         <div className="admissions-hero-overlay">
           <div className="admissions-hero-content">
-            <h1>Admissions</h1>
+            <h1>2026 Registration is on going for all classes</h1>
             <p>Join the Pamoja Junior School family - Where excellence meets opportunity in a nurturing educational environment</p>
           </div>
         </div>
@@ -121,7 +121,7 @@ function AdmissionsPage({ setCurrentPage }) {
               </div>
               <h3>Fees Structure</h3>
               <ul>
-                <li>Day schoolers: UGX 500,000 per term</li>
+                <li>Day schoolers: UGX 550,000 per term</li>
                 <li>Boarding: UGX 900,000 per term</li>   
                 
               
