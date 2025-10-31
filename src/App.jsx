@@ -7,6 +7,7 @@ import GalleryPage from './GalleryPage';
 import AboutPage from './AboutPage';
 import ProgrammesPage from './ProgrammesPage';
 import AcademicsPage from './AcademicsPage';
+import WhatsAppButton from './whatsappbutton';
 import './App.css';
 
 
@@ -416,6 +417,19 @@ function App() {
       
       {/* FAQ Page */}
       {currentPage === 'faq' && <FAQPage setCurrentPage={setCurrentPage} />}
+      <Router>
+      <Routes>
+        
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/academics" element={<AcademicsPage />} />
+        <Route path="/programmes" element={<ProgrammesPage />} />
+        <Route path="/gallery" element={<GalleryPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/admissions" element={<AdmissionsPage />} />
+        <Route path="/faq" element={<FAQPage />} />
+      </Routes>
+      </Router>
+      <WhatsAppButton />
     </div>
   );
 }
